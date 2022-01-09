@@ -12,3 +12,7 @@ To compile the CloudFormation templates, follow these steps:
 4. Then compile CloudFormation by running `cdk synth`. The output will be stored in `cdk.out`.
 
 To deploy the templates to your AWS account, run `cdk deploy`.
+
+## Gatsby demo site
+
+The folder `website/` contains a simple Gatsby project to interact with the user pools. To use the website, first follow the Gatsby [installation instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#installation-guide). Open the `index.js` file and update `default_user_pool_client` and `no_verify_user_pool_client` variables with the user pool clients deployed with CDK. Then navigate to the Gatsby directory and run `gatsby develop`.
